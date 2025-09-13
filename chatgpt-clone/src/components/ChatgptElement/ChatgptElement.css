@@ -22,3 +22,34 @@
   fill: rgba(255, 255, 255, 0.667) ;
   width: 18px;
 }
+
+.chatgpt-element-dropdown {
+  position: absolute;
+  left: 0; 
+  transform: translateY(80px);
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 0.75cap;
+  background-color: rgb(77, 77, 77);
+  color: white;
+  width: 300px;
+}
+
+.chatgpt-element-dropdown-item {
+  padding: 10px;
+  border-radius: 0.75cap;
+}
+
+.chatgpt-element-dropdown-item:hover {
+  background-color: rgba(107, 107, 107, 0.642);
+}
+
+.chatgpt-element-dropdown-item-title {
+  font-size: 14px !important;
+}
+
+
+.chatgpt-element-dropdown-item-detail {
+  font-size: 12px !important;
+  color: rgba(255, 255, 255, 0.557) !important;
+}

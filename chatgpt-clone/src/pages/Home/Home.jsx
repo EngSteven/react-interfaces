@@ -3,6 +3,8 @@ import "./Home.css"
 import ChatgptElement from "../../components/ChatgptElement/ChatgptElement"
 
 const Home = () => {
+
+
   return (
     <div className="home-page">
       <div className="home-container">
@@ -22,6 +24,9 @@ const Home = () => {
                 <path d="M18 20L21 21L19.1 15.3C19.1 15.3 20 14 20 11.5C20 8.90308 18.8354 6.57817 17 5.01903M11.5 3C6.80558 3 3 6.80558 3 11.5C3 16.1944 6.80558 20 11.5 20C14.0847 20 15.3 19.1 15.3 19.1" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
               </g>
             </svg>
+            <div className="home-container-temporary-chat-tooltip">
+              <p>Turn on temporary chat</p>
+            </div>
           </div>
           
         </header>
