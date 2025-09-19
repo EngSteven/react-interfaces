@@ -30,7 +30,7 @@
   margin-left: 10px;
   padding: 5px;
   border-radius: 0.75cap;
-  background-color: rgb(77, 77, 77);
+  background-color: rgb(53, 53, 53);
   color: white;
   width: 300px;
 }
@@ -52,4 +52,10 @@
 .chatgpt-element-dropdown-item-detail {
   font-size: 12px !important;
   color: rgba(255, 255, 255, 0.557) !important;
+}
+
+@media (max-width: 768px) {
+  .chatgpt-element-wrapper {
+    display: none;
+  }
 }

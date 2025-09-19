@@ -1,6 +1,7 @@
 import "./Home.css"
 
 import ChatgptElement from "../../components/ChatgptElement/ChatgptElement"
+import AskInput from "../../components/AskInput/AskInput"
 
 const Home = () => {
 
@@ -30,7 +31,8 @@ const Home = () => {
           </div>
           
         </header>
-        <h1>Hello, this is Home Page!</h1>
+        <h1>What are you working on?</h1>
+        <AskInput></AskInput>
       </div>
     </div>
   )

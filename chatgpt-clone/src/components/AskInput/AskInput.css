@@ -1,0 +1,99 @@
+.ask-input-container {
+  background-color: rgb(53, 53, 53);
+  width: 800px;
+  height: 60px;
+  margin: 40px auto;
+  padding: 20px 10px;
+  border-radius: 2.5cap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ask-input-container input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  width:82%;
+}
+
+.ask-input-container input::placeholder {
+  color: rgba(255, 255, 255, 0.557) !important;
+}
+
+
+
+.ask-input-plus-icon-wrapper {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ask-input-plus-icon-wrapper.idle {
+  display: none;
+}
+
+.ask-input-plus-icon-wrapper:hover {
+  background-color: rgba(94, 94, 94, 0.589);
+  cursor: pointer;
+}
+
+
+
+
+
+
+.ask-input-plus-icon-tooltip {
+  position: absolute;
+  transform: translateY(45px);
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 1cap;
+  font-size: 12px;
+  opacity: 0;
+}
+
+.ask-input-plus-icon-wrapper:hover .ask-input-plus-icon-tooltip{
+  opacity: 1;
+  
+}
+
+.ask-input-plus-icon {
+  fill: white;
+  stroke: white;
+  stroke-width: 1.5px;
+  width: 22px;
+}
+
+.ask-input-microphone-icon {
+  width: 22px;
+}
+.ask-input-voice-mode-icon {
+  width: 22px;
+}
+
+.ask-input-arrow-up-icon-wrapper {
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.ask-input-arrow-up-icon-wrapper.active {
+  display: flex;
+}
+
+.ask-input-arrow-up-icon {
+  width: 22px;
+}
+
