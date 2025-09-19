@@ -1,0 +1,55 @@
+
+.mini-side-bar-container {
+  width: 50px;
+  border-right: 1px solid rgba(76, 76, 76, 0.534);
+  padding: 10px 0;
+}
+
+.mini-side-bar-up-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-side-bar-up-icons > .icons-wrapper:first-of-type {
+  margin-bottom: 20px;
+}
+
+.mini-side-bar-tooltip {
+  position: absolute;
+  transform: translateX(75px);
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 1cap;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.icons-wrapper:hover .mini-side-bar-tooltip{
+  opacity: 1;
+  
+}
+
+.mini-side-bar-side-bar-icon {
+  width: 18px;
+  stroke-width: 1px;
+}
+
+.mini-side-bar-new-chat-icon {
+  width: 20px;
+  stroke-width: 1px;
+}
+
+.mini-side-bar-search-chat-icon {
+  width: 20px;
+  stroke-width: 2px;
+}
+
+.mini-side-bar-gallery-icon {
+  width: 20px;
+  stroke-width: 2px;
+}

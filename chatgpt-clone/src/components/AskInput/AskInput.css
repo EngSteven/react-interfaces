@@ -25,7 +25,7 @@
 
 
 
-.ask-input-plus-icon-wrapper {
+.icons-wrapper {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -34,11 +34,11 @@
   align-items: center;
 }
 
-.ask-input-plus-icon-wrapper.idle {
+.icons-wrapper.idle {
   display: none;
 }
 
-.ask-input-plus-icon-wrapper:hover {
+.icons-wrapper:hover {
   background-color: rgba(94, 94, 94, 0.589);
   cursor: pointer;
 }
@@ -57,9 +57,10 @@
   border-radius: 1cap;
   font-size: 12px;
   opacity: 0;
+  pointer-events: none;
 }
 
-.ask-input-plus-icon-wrapper:hover .ask-input-plus-icon-tooltip{
+.icons-wrapper:hover .ask-input-plus-icon-tooltip{
   opacity: 1;
   
 }
@@ -97,3 +98,40 @@
   width: 22px;
 }
 
+/* Responsivo */
+@media (max-width: 1024px) {
+  .ask-input-container {
+    width: 90%; /* ocupa casi todo el ancho */
+  }
+
+  .ask-input-container input {
+    width: 85%; /* que se ajuste al container */
+  }
+}
+
+@media (max-width: 768px) {
+  .ask-input-container {
+    width: 95%;
+    height: auto; /* por si el input crece */
+    padding: 15px 8px;
+  }
+
+  .ask-input-container input {
+    font-size: 14px;
+    width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ask-input-container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 12px 6px;
+    gap: 6px;
+  }
+
+  .ask-input-container input {
+    font-size: 13px;
+    width: 75%; /* menos para dar espacio a iconos */
+  }
+}

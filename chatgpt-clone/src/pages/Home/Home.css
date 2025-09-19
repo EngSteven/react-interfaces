@@ -15,6 +15,12 @@ h1 {
 .home-page {
   background-color: rgb(37, 37, 37);
   height: 100vh;
+  display: flex;
+  
+}
+
+.home-container {
+  width: 100%;
 }
 
 .home-container-header {
@@ -84,6 +90,7 @@ h1 {
   color: white;
   font-size: 12px;
   opacity: 0;
+  pointer-events: none;
 }
 
 .home-container-temporary-chat:hover .home-container-temporary-chat-tooltip {

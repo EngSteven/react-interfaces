@@ -2,12 +2,14 @@ import "./Home.css"
 
 import ChatgptElement from "../../components/ChatgptElement/ChatgptElement"
 import AskInput from "../../components/AskInput/AskInput"
+import MiniSideBar from "../../components/MiniSideBar/MiniSideBar"
 
 const Home = () => {
 
 
   return (
     <div className="home-page">
+      <MiniSideBar></MiniSideBar>
       <div className="home-container">
         <header className="home-container-header">
           <ChatgptElement />

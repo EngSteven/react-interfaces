@@ -14,7 +14,7 @@ const AskInput = () => {
 
   return (
     <div className="ask-input-container">
-      <div className="ask-input-plus-icon-wrapper">
+      <div className="icons-wrapper">
         {/* Plus icon */}
         <svg className="ask-input-plus-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M12 4V20"  stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
         
@@ -31,7 +31,7 @@ const AskInput = () => {
         
       </input>
 
-      <div className="ask-input-plus-icon-wrapper">
+      <div className="icons-wrapper">
         {/* Microphone icon */}
         <svg className="ask-input-microphone-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 10V12C19 15.866 15.866 19 12 19M5 10V12C5 15.866 8.13401 19 12 19M12 19V22M8 22H16M12 15C10.3431 15 9 13.6569 9 12V5C9 3.34315 10.3431 2 12 2C13.6569 2 15 3.34315 15 5V12C15 13.6569 13.6569 15 12 15Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>        
         <div className="ask-input-plus-icon-tooltip">
@@ -39,7 +39,7 @@ const AskInput = () => {
         </div>
       </div>
 
-      <div className={`ask-input-plus-icon-wrapper ${ask!="" ? "idle":""}`}>
+      <div className={`icons-wrapper ${ask!="" ? "idle":""}`}>
         {/* Voice mode icon */}
         <svg className="ask-input-voice-mode-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 4L12 20" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M8 9L8 15" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 10L20 14" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M4 10L4 14" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 7L16 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>        
         <div className="ask-input-plus-icon-tooltip">
