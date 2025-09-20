@@ -38,24 +38,24 @@ h1 {
   align-items: center;
   padding: 10px;
   border-radius: 2.5cap;
-  background-color: rgb(51, 51, 130);
+  background-color: rgba(47, 47, 121, 0.756);
 }
 
 .home-container-upgrade:hover {
   cursor:pointer;
-  background-color: rgba(86, 86, 214, 0.701);
+  background-color: rgba(60, 60, 151, 0.701);
 }
 
 .home-container-upgrade span {
-  color: skyblue;
+  color: rgb(152, 223, 252);
   font-size: 14px;
   font-weight: bold;
 }
 
 .home-container-upgrade svg {
   width: 20px;
-  fill: skyblue;
-  stroke: skyblue;
+  fill: rgb(152, 223, 252);
+  stroke: rgb(152, 223, 252);
 }
 
 .home-container-temporary-chat {
@@ -95,4 +95,21 @@ h1 {
 
 .home-container-temporary-chat:hover .home-container-temporary-chat-tooltip {
   opacity: 1;
+}
+
+.mini-side-bar-hamburger-icon {
+  width: 24px;
+  stroke-width: 2px;
+  display: none;
+}
+
+
+.mini-side-bar-hamburger-icon:hover {
+  cursor:pointer;
+}
+
+@media (max-width: 768px) {
+  .mini-side-bar-hamburger-icon  {
+    display: flex;
+  }
 }

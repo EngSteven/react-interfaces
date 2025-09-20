@@ -3,16 +3,19 @@
   width: 50px;
   border-right: 1px solid rgba(76, 76, 76, 0.534);
   padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.mini-side-bar-up-icons {
+.mini-side-bar-icons {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.mini-side-bar-up-icons > .icons-wrapper:first-of-type {
+.mini-side-bar-icons > .icons-wrapper.first-icon {
   margin-bottom: 20px;
 }
 
@@ -35,21 +38,39 @@
 }
 
 .mini-side-bar-side-bar-icon {
-  width: 18px;
+  width: 16px;
   stroke-width: 1px;
 }
 
 .mini-side-bar-new-chat-icon {
-  width: 20px;
+  width: 18px;
   stroke-width: 1px;
 }
 
 .mini-side-bar-search-chat-icon {
-  width: 20px;
+  width: 18px;
   stroke-width: 2px;
 }
 
 .mini-side-bar-gallery-icon {
-  width: 20px;
+  width: 18px;
   stroke-width: 2px;
+}
+
+.mini-side-bar-star-icon {
+  width: 22px;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke: white;
+}
+
+.mini-side-bar-user-icon {
+  width: 22px;
+  stroke-width: 2px;
+}
+
+@media (max-width: 768px) {
+  .mini-side-bar-container {
+    display: none;
+  }
 }

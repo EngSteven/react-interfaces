@@ -25,9 +25,9 @@
 
 .chatgpt-element-dropdown {
   position: absolute;
-  left: 0; 
-  transform: translateY(80px);
-  margin-left: 10px;
+  top: 50px;
+  left: 0;
+  margin-left: 55px;
   padding: 5px;
   border-radius: 0.75cap;
   background-color: rgb(53, 53, 53);
