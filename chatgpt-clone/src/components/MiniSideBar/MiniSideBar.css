@@ -13,7 +13,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
 
 .mini-side-bar-icons > .icons-wrapper.first-icon {
   margin-bottom: 20px;
@@ -21,7 +23,8 @@
 
 .mini-side-bar-tooltip {
   position: absolute;
-  transform: translateX(75px);
+  left: 100%;
+  margin-left: 5px;
   color: white;
   background-color: black;
   padding: 10px;
