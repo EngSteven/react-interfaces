@@ -1,0 +1,187 @@
+
+.side-bar-container {
+  width: 350px;
+  border-right: 1px solid rgba(76, 76, 76, 0.534);
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(22, 22, 22);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.side-bar-container.idle {
+  display: none;
+}
+
+.side-bar-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.side-bar-items-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(76, 76, 76, 0.534);
+  position: sticky;
+  top: 0;
+  background-color: rgb(22, 22, 22);
+  z-index: 1;
+}
+
+.side-bar-items-footer {
+  padding-top: 5px;
+  width: 100%;
+  border-top: 1px solid rgba(76, 76, 76, 0.534);
+  position: sticky;
+  bottom: 0;
+  background-color: rgb(22, 22, 22);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-bar-footer-user-name,
+.side-bar-footer-user-plan {
+  width: 100px;          /* o max-width */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;        /* importante */
+}
+
+.side-bar-footer-user-name {
+  font-size: 14px;
+}
+
+.side-bar-footer-user-plan {
+  font-size: 12px;
+  color: rgb(156, 156, 156);
+}
+
+.side-bar-footer-upgrade {
+  border-radius: 2cap;
+  border: solid 1px rgb(56, 55, 55);
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-size: 12px;
+  padding: 7.5px;
+}
+
+.side-bar-footer-upgrade:hover {
+  background-color: rgb(94, 94, 94);
+  cursor: pointer;  
+}
+
+.side-bar-item-wrapper {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  border-radius: 1cap;
+}
+
+.side-bar-item-wrapper:hover {
+  background-color: rgba(94, 94, 94, 0.589);
+  cursor: pointer;
+}
+
+.side-bar-tooltip {
+  position: absolute;
+  left: 100%;
+  margin-left: 5px;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 1cap;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.icons-wrapper:hover .side-bar-tooltip{
+  opacity: 1;
+  
+}
+
+.side-bar-items-header > .icons-wrapper {
+  position: relative;
+}
+
+.side-bar-side-bar-tooltip {
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  border-radius: 1cap;
+  padding: 7.5px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.side-bar-items-header > .icons-wrapper:hover .side-bar-side-bar-tooltip {
+  opacity: 1;
+}
+
+
+
+.side-bar-side-bar-icon {
+  width: 16px;
+  stroke-width: 1px;
+}
+
+.side-bar-new-chat-icon {
+  width: 18px;
+  stroke-width: 1px;
+}
+
+.side-bar-search-chat-icon {
+  width: 18px;
+  stroke-width: 2px;
+}
+
+.side-bar-gallery-icon {
+  width: 18px;
+  stroke-width: 2px;
+}
+
+.side-bar-star-icon {
+  width: 22px;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke: white;
+}
+
+.side-bar-user-icon {
+  width: 22px;
+  stroke-width: 2px;
+}
+
+.side-bar-chatgpt-icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2px;
+  fill: white;
+}
+
+@media (max-width: 768px) {
+  .side-bar-container {
+    display: none;
+  }
+}

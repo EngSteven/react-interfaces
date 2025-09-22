@@ -1,15 +1,23 @@
+import {useState} from "react"
+
 import "./Home.css"
 
 import ChatgptElement from "../../components/ChatgptElement/ChatgptElement"
 import AskInput from "../../components/AskInput/AskInput"
 import MiniSideBar from "../../components/MiniSideBar/MiniSideBar"
+import SideBar from "../../components/SideBar/SideBar"
 
 const Home = () => {
 
+  const [showSideBar, setShowSideBar] = useState(true);
+
+  
 
   return (
     <div className="home-page">
-      <MiniSideBar></MiniSideBar>
+
+      <SideBar isOpen={showSideBar} setIsOpen={setShowSideBar}></SideBar>
+      <MiniSideBar isOpen={!showSideBar} setIsOpen={setShowSideBar}></MiniSideBar>
       <div className="home-container">
         <header className="home-container-header">
           <ChatgptElement />
