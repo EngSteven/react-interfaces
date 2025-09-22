@@ -37,6 +37,7 @@
   opacity: 0;
   pointer-events: none;
   white-space: nowrap;
+  z-index: 2;
 }
 
 .icons-wrapper:hover .mini-side-bar-tooltip{

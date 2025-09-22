@@ -5,6 +5,7 @@
   gap: 5px;
   padding: 7.5px;
   border-radius: 0.75cap;
+  position: relative;
 }
 
 .chatgpt-element-wrapper:hover {
@@ -27,7 +28,6 @@
   position: absolute;
   top: 50px;
   left: 0;
-  margin-left: 55px;
   padding: 5px;
   border-radius: 0.75cap;
   background-color: rgb(53, 53, 53);

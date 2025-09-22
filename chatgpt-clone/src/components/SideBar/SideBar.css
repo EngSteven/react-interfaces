@@ -1,6 +1,6 @@
 
 .side-bar-container {
-  width: 350px;
+  width: 300px;
   border-right: 1px solid rgba(76, 76, 76, 0.534);
   padding: 0 5px;
   display: flex;
@@ -177,7 +177,7 @@
   width: 24px;
   height: 24px;
   stroke-width: 2px;
-  fill: white;
+  fill: rgb(255, 255, 255);
 }
 
 @media (max-width: 768px) {
